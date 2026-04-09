@@ -359,29 +359,29 @@
     </div>
   </div>
   <div class="contact-right">
-    <form onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">Your Name</label>
-          <input class="form-input" type="text" placeholder="Jane Smith" required />
-        </div>
-        <div class="form-group">
-          <label class="form-label">Student's Grade</label>
-          <select class="form-select">
-            <option value="">Select grade</option>
-            <option>Rising 7th (early prep)</option>
-            <option>Rising 8th (ideal timing)</option>
-          </select>
-        </div>
+    <form action="https://formspree.io/f/xaqlzkwe" method="POST">
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label">Your Name</label>
+      <input class="form-input" type="text" name="name" placeholder="First Last" required />
+    </div>
+    <div class="form-group">
+      <label class="form-label">Student's Grade</label>
+      <select class="form-select" name="grade">
+        <option value="">Select grade</option>
+        <option>Rising 7th (early prep)</option>
+        <option>Rising 8th (ideal timing)</option>
+      </select>
+    </div>
       </div>
       <div class="form-group">
         <label class="form-label">Email</label>
-        <input class="form-input" type="email" placeholder="you@email.com" required />
+        <input class="form-input" type="email" name="email" placeholder="you@email.com" required />
       </div>
       <div class="form-group">
         <label class="form-label">Format</label>
-        <select class="form-select">
-          <option value="">Select format</option>
+        <select class="form-select" name="format">
+  <option value="">Select format</option>
           <option>1-on-1 Private Sessions</option>
           <option>Small Group (2–4 students)</option>
           <option>Not sure</option>
@@ -389,7 +389,7 @@
       </div>
       <div class="form-group">
         <label class="form-label">Message</label>
-        <textarea class="form-textarea" placeholder="Any context about your student, questions about scheduling, etc."></textarea>
+        <textarea class="form-textarea" name="message" placeholder="Any context about your student, questions about scheduling, etc."></textarea>
       </div>
       <button type="submit" class="form-submit">Send →</button>
       <p id="form-confirm">✓ Sent! I'll be in touch soon.</p>
