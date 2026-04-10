@@ -52,12 +52,12 @@
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
+    min-height: 75vh;
     padding-top: 57px;
   }
   .hero-left {
     display: flex; flex-direction: column; justify-content: center;
-    padding: 80px 56px 80px 72px;
+    padding: 48px 56px 48px 72px;
   }
   .hero-tag {
     font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
@@ -74,14 +74,14 @@
     display: inline-block;
     background: var(--navy);
     color: var(--cream);
-    padding: 16px 28px;
+    padding: 12px 22px;
     border-radius: 4px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
     align-self: flex-start;
   }
   .score-number {
     font-family: 'Lora', serif;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 600;
     color: var(--accent);
     line-height: 1;
@@ -171,36 +171,31 @@
   /* PRICING */
   .pricing {
     background: var(--navy);
-    padding: 80px 72px;
+    padding: 56px 72px;
   }
   .pricing .section-label { color: rgba(255,255,255,0.45); }
   .pricing-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
-    max-width: 720px; margin-top: 40px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    max-width: 580px; margin-top: 28px;
   }
   .pricing-card {
     border: 1px solid rgba(255,255,255,0.1);
-    padding: 36px;
+    padding: 28px;
     border-radius: 4px;
     transition: border-color 0.2s;
   }
   .pricing-card:hover { border-color: var(--accent); }
   .pricing-type {
     font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
-    color: var(--accent); margin-bottom: 12px;
-  }
-  .pricing-name {
-    font-family: 'Lora', serif;
-    font-size: 1.3rem; color: var(--white);
-    margin-bottom: 16px;
+    color: var(--accent); margin-bottom: 8px;
   }
   .pricing-price {
     font-family: 'Lora', serif;
-    font-size: 2.2rem; color: var(--accent);
+    font-size: 2rem; color: var(--white);
     margin-bottom: 4px;
   }
   .pricing-note {
-    font-size: 0.78rem; color: rgba(255,255,255,0.35);
+    font-size: 0.76rem; color: rgba(255,255,255,0.35);
   }
 
   /* CONTACT */
@@ -345,15 +340,13 @@
   <div class="pricing-grid">
     <div class="pricing-card">
       <p class="pricing-type">SHSAT</p>
-      <p class="pricing-name">Private Sessions</p>
-      <p class="pricing-price">$85<span style="font-size:1rem;font-weight:300"> / session</span></p>
-      <p class="pricing-note">90 minutes · 1-on-1</p>
+      <p class="pricing-price">$85<span style="font-size:1rem;font-weight:300"> / 90 min</span></p>
+      <p class="pricing-note">1-on-1 · Brooklyn & Manhattan</p>
     </div>
     <div class="pricing-card">
       <p class="pricing-type">SAT</p>
-      <p class="pricing-name">Private Sessions</p>
-      <p class="pricing-price">$85<span style="font-size:1rem;font-weight:300"> / session</span></p>
-      <p class="pricing-note">90 minutes · 1-on-1</p>
+      <p class="pricing-price">$85<span style="font-size:1rem;font-weight:300"> / 90 min</span></p>
+      <p class="pricing-note">1-on-1 · Brooklyn & Manhattan</p>
     </div>
   </div>
 </section>
@@ -364,9 +357,9 @@
     <p class="section-label">Get in Touch</p>
     <p class="contact-intro">Feel free to email me or fill out the form, whatever's easier. Just let me know which test your student is preparing for, their current grade, and any context that's helpful. I'll get back to you quickly.</p>
     <div class="contact-links">
-      <a href="mailto:avasquarles@gmail.com" class="contact-link">
+      <a href="/cdn-cgi/l/email-protection#cdacbbacbebcb8acbfa1a8be8daaa0aca4a1e3aea2a0" class="contact-link">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        avasquarles@gmail.com
+        <span class="__cf_email__" data-cfemail="6302150210121602110f061023040e020a0f4d000c0e">[email&#160;protected]</span>
       </a>
       <a href="https://www.linkedin.com/in/avaquarles" target="_blank" class="contact-link">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -379,7 +372,7 @@
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Your Name</label>
-          <input class="form-input" type="text" name="name" placeholder="Jane Smith" required />
+          <input class="form-input" type="text" name="name" placeholder="Name" required />
         </div>
         <div class="form-group">
           <label class="form-label">Test</label>
@@ -411,10 +404,4 @@
         <label class="form-label">Message</label>
         <textarea class="form-textarea" name="message" placeholder="Any context about your student, questions about scheduling, etc."></textarea>
       </div>
-      <button type="submit" class="form-submit">Send</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  <span class="footer-name">Ava Quarles</span>
+      <butt
